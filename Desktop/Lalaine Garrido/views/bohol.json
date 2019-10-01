@@ -1,0 +1,9 @@
+{
+    "name" : "Province of Bohol",
+    "images" : ["http://localhost:3000/images/bohol1.jpg", "http://localhost:3000/images/bohol2.jpg", "http://localhost:3000/images/bohol3.jpg"],
+    "group" : "Visayas",
+    "population" : "1,313,560",
+    "delicacies" : ["Danggit", "Dried Mango", "Chicharon", "Otap"],
+    "texts" : "Bohol is a province of the Philippines, in the country’s Central Visayas region. It comprises Bohol Island and numerous smaller surrounding islands. Bohol is known for coral reefs and unusual geological formations, notably the Chocolate Hills. On the main island, near the town of Carmen, these 1,200 or so symmetrical mounds turn cocoa-brown in the dry season, contrasting with the surrounding jungle's greenery.",
+    "ratings" : 0
+}

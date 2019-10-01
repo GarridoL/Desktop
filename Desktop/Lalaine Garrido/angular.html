@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<body>
+    <h1>Try to input your name and see what happens!</h1>
+    <div ng-app="LalayApp" ng-controller="LalayControl" ng-init="myCol='lightblue'" ng-init="lalaine">
+        
+        First Name: <input type="text" ng-model="fname"><br><br>
+        Last Name: <input type="text" ng-model="lname"><br>
+        <br>
+        <h1>Hi, {{fname + ' ' + lname}}</h1>
+        <input style="background-color:{{myCol}}" ng-model="myCol">
+        <h1>I want {{myCol}} color</h1>
+        <h1>{{lalaine}}</h1>
+    </div>
+    <script>
+        var app = angular.module('LalayApp', []);
+        app.controller('LalayControl', function ($scope) {
+            $scope.fname = "";
+            $scope.lname = "";
+        });
+    </script>
+</body>
+
+</html>

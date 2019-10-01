@@ -1,0 +1,9 @@
+{
+    "name" : "Province of Leyte",
+    "images" : ["http://localhost:3000/images/leyte1.jpg", "http://localhost:3000/images/leyte2.jpg", "http://localhost:3000/images/leyte3.jpg"],
+    "group" : "Visayas",
+    "population" : "1,966,768",
+    "delicacies" : ["Danggit", "Dried Mango", "Chicharon", "Otap"],
+    "texts" : "Leyte is a province in the Philippines located in the Eastern Visayas region, occupying the northern three-quarters of Leyte Island. Its capital is the city of Tacloban. Leyte is situated west of Samar Island, north of Southern Leyte and south of Biliran.",
+    "ratings" : 0
+}

@@ -1,0 +1,54 @@
+html
+	head
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+		style(type="text/css").
+			body {
+				background-color: gray;
+			}
+			#one {
+				width:50%;
+				height:65%;
+				height:auto;
+			}
+		body
+			center
+				h1=name
+				br
+				div#one
+					img(src=img1)
+			div
+				img(src=img2, style='height:65%; float:left')
+				img(src=img3, style='width:50%;height:65%; float:right')
+			div
+				label Major Group of Island
+				h1=group
+				label Population
+				h1=population
+				label Delicacies
+				ul
+				for value in delicacies
+					li=value
+			p=texts
+			h2 RATINGS
+			h3
+			button#btnOne(value="1") 1
+			button#btnTwo 2
+			button#btnThree 3
+			button#btnFour 4
+			button#btnFive 5
+			script.
+				$(document).ready(function(){
+					$("button").on("click", function(e) {
+						var myButton = $(this).val();
+						e.preventDefault();
+						$.ajax({
+						url: "http://localhost:3000/provinces/cebu",
+						data: JSON.stringify({ result : myButton}),
+						success: function(data){
+							$("h3").html(data.result);
+							console.log($(this).val("hahahaha"))
+						}});
+						
+					});
+				})
+
